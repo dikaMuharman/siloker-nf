@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SilokerNf</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="min-vh-100 d-flex align-items-center">
+      <!-- Navigation -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <a href="#" class="navbar-brand">SilokerNf</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Lowongan</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Loker</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Daftar mitra</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">News</a>
+              </li>
+            </ul>
+            <div class="navbar-nav align-items-lg-center">
+              <a
+                data-bs-toggle="modal"
+                data-bs-target="#modalLogin"
+                class="nav-link"
+                href="#"
+              >
+                Sign in
+              </a>
+              <a href="#" class="btn btn-primary">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navigation -->
+      <!-- Hero section -->
+      <section class="container">
+        <div class="row d-flex flex-md-column-reverse flex-lg-row">
+          <!-- Title hero goes here -->
+          <div class="col col-12 col-md-12 col-lg-6 title-hero">
+            <h1>
+              Your dream job is <br />
+              waiting for you.
+            </h1>
+            <div class="mt-3 input-landing shadow">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <img src="assets/icons/location.svg" alt="location" />
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Location"
+                  aria-label="location"
+                />
+              </div>
+              <img
+                class="input-group-text d-none d-md-block"
+                src="assets/icons/line.svg"
+                alt="line"
+              />
+
+              <div class="input-group">
+                <span class="input-group-text">
+                  <img src="assets/icons/briefcase.svg" alt="case" />
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Job Category"
+                  aria-label="Job Category"
+                />
+              </div>
+              <button class="btn btn-primary">
+                <img src="assets/icons/search.svg" alt="search" />
+              </button>
+            </div>
+          </div>
+          <div
+            class="col col-md-12 d-none d-md-block col-lg-6 mt-0 image-placeholder"
+          >
+            <img
+              src="assets/images/image-placeholder.png"
+              alt="image-placeholder"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- End hero section -->
+    </header>
+    <!-- News section -->
+    <section class="container my-5 mt-5">
+      <h2>Berita terkini</h2>
+      <!-- Category news -->
+      <div class="row">
+        <div class="col col-md-4 text-center my-2">
+          <a href="#" class="news-category active">Trending</a>
+        </div>
+        <div class="col col-md-4 text-center my-2">
+          <a href="#" class="news-category">Latest post</a>
+        </div>
+        <div class="col col-md-4 text-center my-2">
+          <a href="#" class="news-category">Top News</a>
+        </div>
+      </div>
+      <!-- End Category -->
+      <!-- News card -->
+      <div class="row my-3">
+        <div class="col col-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="assets/images/news-1.png"
+              class="card-img-top"
+              alt="news"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Fitur Serap Jejak Karbon Gojek, Pantau Pohon Lewat Dashboard
+              </h5>
+              <a class="card-text stretched-link" href="#">
+                Source : cnnindonesia
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="assets/images/news-2.png"
+              class="card-img-top"
+              alt="news"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Pemilik Website Harap Bersiap, Chrome Mulai Blokir Iklan yang
+                Bikin Lemot
+              </h5>
+              <a class="card-text stretched-link" href="#"> Source : kompas </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="assets/images/news-3.png"
+              class="card-img-top"
+              alt="news"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                EdTech Startup Cakap Sambut 2021 dengan Investasi Rp 42 Miliar
+              </h5>
+              <a class="card-text stretched-link" href="#">
+                Source : liputan6
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img
+              src="assets/images/news-4.png"
+              class="card-img-top"
+              alt="news"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Deretan Fitur Baru WhatsApp Dirasakan Pengguna di RI 2020
+              </h5>
+              <a class="card-text stretched-link" href="#">
+                Source : cnnindonesia
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End News Card-->
+    </section>
+    <!-- End News section -->
+    <!-- Footer  -->
+    <footer>
+      <div class="container py-2 text-white">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3 class="mb-3">SilokerNf</h3>
+            <p class="fs-6">
+              SilokerNF adalah platform pencarian kerja untuk mahasiswa STTNF
+              atau dari luar STTNF SilokerNF juga memiliki berbagai mitra yang
+              siap menyerap fresh graduate untuk bekerja di perusahaan mereka
+            </p>
+          </div>
+        </div>
+        <p class="text-center pt-3">&copy; SilokerNF 2020</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Modal Component-->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      tabindex="-1"
+      aria-labelledby="modalLoginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

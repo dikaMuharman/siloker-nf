@@ -1,0 +1,30 @@
+{
+  "name": "siloker-nf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/**.html src/pages/**.html",
+    "build": "parcel build *.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dikaMuharman/siloker-nf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dikaMuharman/siloker-nf/issues"
+  },
+  "homepage": "https://github.com/dikaMuharman/siloker-nf#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.6.0",
+    "@yaireo/tagify": "^3.22.0",
+    "bootstrap": "^5.0.0-beta1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.30.0"
+  }
+}
