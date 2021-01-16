@@ -8,6 +8,7 @@ $gray-600: #8d93ab;
 $theme-colors: (
   "primary": #403ff2,
   "secondary": #8d93ab,
+  "danger": #c6303e,
 );
 $font-family-base: "Poppins", sans-serif;
 
@@ -117,7 +118,9 @@ body {
   }
 }
 
-.card {
+// Card news
+
+.card-news {
   border: none;
 
   .card-body {
@@ -129,6 +132,44 @@ body {
       color: $secondary;
       text-decoration: none;
     }
+  }
+}
+
+// Modal
+
+.modal-header {
+  border: none;
+}
+
+// Form login
+.form-login {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  .form-floating:first-child {
+    margin-top: 3rem;
+  }
+
+  .form-floating {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    .form-control {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $gray-600;
+      border-radius: 0;
+    }
+    .is-invalid {
+      border-bottom: 1px solid $danger;
+    }
+  }
+
+  .btn {
+    display: block;
+    margin: 8px 0px;
   }
 }
 
