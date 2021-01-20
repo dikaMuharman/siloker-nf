@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-@import "../../node_modules/@yaireo/tagify/src/tagify.scss";
-
 $gray-900: #00334e;
 $gray-600: #8d93ab;
 
@@ -12,11 +10,11 @@ $theme-colors: (
 );
 $font-family-base: "Poppins", sans-serif;
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
 body {
   color: $gray-900;
 }
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "formcustom";
 
 .btn {
   padding: 0.5rem 1rem;
@@ -175,4 +173,38 @@ body {
 
 footer {
   background-color: $primary;
+}
+
+.card-job {
+  border-radius: 8px;
+  position: relative;
+
+  &.active {
+    border-left: 10px solid $primary;
+  }
+
+  .card-tag {
+    display: flex;
+    margin: 0.5rem 0;
+
+    .tags {
+      padding: 0.5rem 1.25rem;
+      background-color: #ccd6dc;
+      border-radius: 100px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  .card-date {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+
+    span {
+      font-size: 14px;
+      color: $gray-600;
+    }
+  }
 }

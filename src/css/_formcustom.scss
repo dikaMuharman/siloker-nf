@@ -1,0 +1,102 @@
+$tags-border-color: none;
+$tag-bg: $primary;
+$tag-hover: #3332c2;
+$tag-text-color: #fff;
+$tag-remove: #4747c8;
+$tag-pad: 0.5em 0.9em;
+$tag-inset-shadow-size: 1.5em;
+$tag-remove-btn-bg--hover: none;
+$placeholder-color: $secondary;
+
+@import "../../node_modules/@yaireo/tagify/src/tagify.scss";
+
+.tagify {
+  &__tag {
+    > div {
+      border-radius: 100px;
+    }
+  }
+}
+
+.form-custom {
+  background-color: #fff;
+  margin-top: 20px;
+  display: flex;
+  min-width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @include media-breakpoint-up(md) {
+    border-radius: 8px;
+    flex-direction: row;
+  }
+
+  &__container {
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    &--hidden {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+
+    &--input {
+      flex: 1 1 100%;
+      @include media-breakpoint-up(md) {
+        flex: 1 1 44%;
+      }
+    }
+
+    &--button {
+      flex-basis: 100%;
+      @include media-breakpoint-up(md) {
+        flex: 1 0 87px;
+      }
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    color: $primary;
+    margin: 0 1rem;
+  }
+  &__control {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    color: $gray-900;
+    font-family: $font-family-base;
+
+    &::placeholder {
+      color: $secondary;
+    }
+  }
+
+  &__button {
+    height: 60px;
+    border: none;
+    padding: 0 1rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 14px;
+    width: 96px;
+    word-break: break-all;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+}
