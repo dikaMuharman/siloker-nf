@@ -1,9 +1,10 @@
 import "bootstrap";
+import "./lowongan";
 import Tagify from "@yaireo/tagify";
 
 const InputTag = document.getElementById("inputTag");
 new Tagify(InputTag);
-// document.addEventListener("DOMContentLoaded", () => {
+
 const email = document.getElementById("EmailLogin");
 const password = document.getElementById("PasswordLogin");
 const formLogin = document.getElementById("FormLogin");

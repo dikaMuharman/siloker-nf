@@ -20,7 +20,7 @@ $placeholder-color: $secondary;
 
 .form-custom {
   background-color: #fff;
-  margin-top: 20px;
+  margin-top: 1rem;
   display: flex;
   min-width: 100%;
   overflow: hidden;
@@ -53,7 +53,7 @@ $placeholder-color: $secondary;
     &--input {
       flex: 1 1 100%;
       @include media-breakpoint-up(md) {
-        flex: 1 1 44%;
+        flex: 1 1 43%;
       }
     }
 
@@ -85,6 +85,7 @@ $placeholder-color: $secondary;
 
   &__button {
     height: 60px;
+    min-width: 100%;
     border: none;
     padding: 0 1rem;
     color: white;
