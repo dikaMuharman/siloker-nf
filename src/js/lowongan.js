@@ -1,4 +1,7 @@
 import data from "./data";
+// Detail component
+import detailComponent from "./Detail";
+// Image component
 import img8 from "../assets/images/image8.png";
 import img10 from "../assets/images/image10.png";
 import img9 from "../assets/images/image9.png";
@@ -9,11 +12,11 @@ import img6 from "../assets/images/image6.png";
 import img2 from "../assets/images/image2.png";
 import img1 from "../assets/images/image1.png";
 import img3 from "../assets/images/image3.png";
+
 // Component card
 const { lowongan } = data;
 const gambar = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 const createCard = (id) => {
-  console.log(lowongan[id]);
   const {
     imageId,
     namaPerusahaan,
@@ -23,7 +26,7 @@ const createCard = (id) => {
     date,
   } = lowongan[id];
   const card = `
-    <div class="card-job">
+    <div class="card-job" data-id=${id}>
       <div class="card-job__image">
         <img src=${gambar[imageId - 1]} alt=${namaPerusahaan} />
       </div>
@@ -50,20 +53,33 @@ lowongan.forEach((job) => {
 
 listContainer.innerHTML = cardComponent;
 
-const detailJob = document.getElementById("detailJob");
+const detailJob = document.querySelector(".detail");
+const detailSection = document.getElementById("detailJob");
 const jobLists = document.querySelectorAll(".card-job");
 
-jobLists.forEach((jobList) => {
-  jobList.addEventListener("click", () => {
-    if (window.innerWidth < 992) {
-      detailJob.classList.add("active");
-      jobList.classList.add("active");
-      window.scrollTo(0, 200);
+const removeActiveClass = () => {
+  jobLists.forEach((jobList) => {
+    if (jobList.classList.contains("active")) {
+      jobList.classList.remove("active");
     }
   });
-  const backLink = document.getElementById("backTo");
-  backLink.addEventListener("click", () => {
-    detailJob.classList.remove("active");
+};
+
+jobLists.forEach((jobList) => {
+  jobList.addEventListener("click", (e) => {
+    if (window.innerWidth < 992) {
+      detailSection.classList.add("active");
+      window.scrollTo(0, 200);
+    }
+
+    removeActiveClass();
+
+    jobList.classList.add("active");
+    detailJob.innerHTML = detailComponent(jobList.dataset.id);
+  });
+
+  detailSection.addEventListener("click", () => {
+    detailSection.classList.remove("active");
     jobList.classList.remove("active");
   });
 });

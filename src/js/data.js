@@ -25,7 +25,7 @@ export default {
       tags: "Admin System",
       lokasi: "Klaten",
       kriteria: [
-        "Bachelor degree in technology-related fields or equivalent. ",
+        "Bachelor degree in technology-related fields or equivalent.",
         "A solid understanding of Linux system administration.",
         "A solid understanding of networking, firewalls, load balancers, TCP/IP, security  standards. ",
         "Solid networking knowledge (OSI network layers, TCP/IP)",
