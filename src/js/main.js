@@ -1,6 +1,7 @@
 import "bootstrap";
 import "./lowongan";
 import Tagify from "@yaireo/tagify";
+import Quill from "quill";
 
 const InputTag = document.getElementById("inputTag");
 new Tagify(InputTag);

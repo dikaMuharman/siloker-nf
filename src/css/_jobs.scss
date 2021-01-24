@@ -51,6 +51,7 @@
   flex-direction: column;
   position: relative;
   margin: 8px 0px;
+  cursor: pointer;
 
   &.active {
     border-left: 7px solid $primary;
