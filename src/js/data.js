@@ -2,9 +2,9 @@ export default {
   lowongan: [
     {
       id: 0,
-      image: "assets/images/image8.jpg",
+      imageId: 8,
       namaPerusahaan: "PT Web Media Technology Indonesia",
-      lowongan: "Technical Chat Support",
+      namaLowongan: "Technical Chat Support",
       tags: "IT Support",
       lokasi: "bali",
       kriteria: [
@@ -18,10 +18,10 @@ export default {
       date: "1/2/2021",
     },
     {
-      id: 2,
-      image: "assets/images/image8.jpg",
+      id: 1,
+      imageId: 8,
       namaPerusahaan: "PT Web Media Technology Indonesia",
-      lowongan: "System Administrator",
+      namaLowongan: "System Administrator",
       tags: "Admin System",
       lokasi: "Klaten",
       kriteria: [
@@ -35,10 +35,10 @@ export default {
       date: "10/2/2021",
     },
     {
-      id: 3,
-      image: "assets/images/image10.jpg",
+      id: 2,
+      imageId: 10,
       namaPerusahaan: "PT Erlimpex",
-      lowongan: "Android Programmer ",
+      namaLowongan: "Android Programmer ",
       tags: "Programmer",
       lokasi: "Semarang",
       kriteria: [
@@ -57,30 +57,9 @@ export default {
     },
     {
       id: 3,
-      image: "assets/images/image10.jpg",
-      namaPerusahaan: "PT Erlimpex",
-      lowongan: "Android Programmer ",
-      tags: "Programmer",
-      lokasi: "Semarang",
-      kriteria: [
-        "Menguasai Android Studio, Java, JSON, PHP",
-        "Menguasai HTML, CSS, Javascript, Jquery",
-        "Menguasai teknik pemrograman dan database dengan baik. ",
-        "Mampu membaca spesifikasi pekerjaan dan mengimplementasikannya dalam kode  program. ",
-        "Mampu berkomunikasi dengan baik",
-        "Terbiasa dengan deadline.",
-        " Jujur, bertanggung jawab, mau belajar dan berkembang.",
-        " Dapat bekerja dalam team maupun individu. ",
-        " Pernah mengerjakan project mobile/android programming (portfolio diutamakan).",
-      ],
-      email: "lowongan@erlimplex.co.id",
-      date: "30/1/2021",
-    },
-    {
-      id: 4,
-      image: "assets/images/image9.jpg",
+      imageId: 9,
       namaPerusahaan: "PT Berca Hardayaperkasa ",
-      lowongan: " IT Support",
+      namaLowongan: " IT Support",
       tags: " IT Support",
       lokasi: "Jakarta",
       kriteria: [
@@ -97,10 +76,10 @@ export default {
       date: "31/1/2021",
     },
     {
-      id: 5,
-      image: "assets/images/image5.jpg",
+      id: 4,
+      imageId: 5,
       namaPerusahaan: "PT Bumi Teknik Utama ",
-      lowongan: "Manager ICT",
+      namaLowongan: "Manager ICT",
       tags: "Manage",
       lokasi: "Jakarta pusat",
       kriteria: [
@@ -125,10 +104,10 @@ export default {
       date: "31/4/2021",
     },
     {
-      id: 6,
-      image: "assets/images/image4.jpg",
+      id: 5,
+      imageId: 4,
       namaPerusahaan: "PT Puninar Jaya",
-      lowongan: "Web Front End Programmer",
+      namaLowongan: "Web Front End Programmer",
       tags: "Front end",
       lokasi: "Jakarta Timur",
       kriteria: [
@@ -147,10 +126,10 @@ export default {
       date: "31/3/2021",
     },
     {
-      id: 7,
-      image: "assets/images/image7.jpg",
+      id: 6,
+      imageId: 7,
       namaPerusahaan: "PT Multi Wahana Kencana",
-      lowongan: "IT Staff",
+      namaLowongan: "IT Staff",
       tags: "Manage",
       lokasi: "Bandung",
       kriteria: [
@@ -165,10 +144,10 @@ export default {
       date: "9/2/2021",
     },
     {
-      id: 8,
-      image: "assets/images/image6.jpg",
+      id: 7,
+      imageId: 6,
       namaPerusahaan: "PT Inkor Sinergi Mandiri",
-      lowongan: "Presales Consultant",
+      namaLowongan: "Presales Consultant",
       tags: "Marketing",
       lokasi: "Jakarta Utara",
       kriteria: [
@@ -183,10 +162,10 @@ export default {
       date: "1/2/2021",
     },
     {
-      id: 9,
-      image: "assets/images/image2.jpg",
+      id: 8,
+      imageId: 2,
       namaPerusahaan: "PT Sisindokom Lintasbuana",
-      lowongan: "Network Engineer (CCNP)",
+      namaLowongan: "Network Engineer (CCNP)",
       tags: "Network",
       lokasi: "Jakarta Pusat",
       kriteria: [
@@ -203,10 +182,10 @@ export default {
       date: "19/2/2021",
     },
     {
-      id: 10,
-      image: "assets/images/image1.jpg",
+      id: 9,
+      imageId: 1,
       namaPerusahaan: "PT Home Center Indonesia (Informa Furnishigs)",
-      lowongan: "DATA ARCHITECT",
+      namaLowongan: "DATA ARCHITECT",
       tags: "Data engineer",
       lokasi: "Jakarta Barat",
       kriteria: [
@@ -235,10 +214,10 @@ export default {
       date: "7/2/2021",
     },
     {
-      id: 11,
-      image: "assets/images/image3.jpg",
+      id: 10,
+      imageId: 3,
       namaPerusahaan: "PT Indo Pratama Teleglobal",
-      lowongan: "HUB Enginee",
+      namaLowongan: "HUB Enginee",
       tags: "Network",
       lokasi: "Jakarta Timur",
       kriteria: [
