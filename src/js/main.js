@@ -8,6 +8,6 @@ FormLogin.addEventListener("submit", (e) => {
   const password = document.getElementById("PasswordLogin");
 
   if (email.value === "dika1254@gmail.com" && password.value === "123456") {
-    window.location.href = "admin.html";
+    window.location.href = "adminlowongan.html";
   }
 });

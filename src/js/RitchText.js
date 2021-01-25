@@ -17,9 +17,14 @@ new Quill("#deskripsi", {
   theme: "snow",
 });
 
-var input = document.querySelector(".customLook"),
+let input = document.querySelector(".customLook"),
   tagify = new Tagify(input),
   button = input.nextElementSibling;
+
+let backLinks = document.querySelectorAll(".back");
+backLinks.forEach((backLink) => {
+  backLink.addEventListener("click", () => window.history.back());
+});
 
 /* 
   Todo : 1. validasi tiap form
