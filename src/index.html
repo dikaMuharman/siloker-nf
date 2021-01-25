@@ -215,11 +215,7 @@
           <div class="modal-body mx-4">
             <h4>SilokerNF</h4>
             <span>Sign in</span>
-            <form
-              action="lowongan.html"
-              class="form-login validate"
-              id="FormLogin"
-            >
+            <form class="form-login validate" method="POST" id="formLogin">
               <div class="form-floating mb-3">
                 <input
                   type="email"
@@ -227,6 +223,7 @@
                   id="EmailLogin"
                   name="EmailLogin"
                   placeholder="name@example.com"
+                  required
                 />
                 <label for="EmailInput">Email address</label>
               </div>
@@ -237,6 +234,7 @@
                   id="PasswordLogin"
                   name="PasswordLogin"
                   placeholder="Password"
+                  required
                 />
                 <label for="PasswordLogin">Password</label>
               </div>

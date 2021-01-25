@@ -1,4 +1,8 @@
 import data from "./data";
+import Tagify from "@yaireo/tagify";
+const InputTag = document.getElementById("inputTag");
+new Tagify(InputTag);
+
 // Detail component
 import detailComponent from "./Detail";
 // Image component

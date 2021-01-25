@@ -58,3 +58,18 @@
 .customLook .tagify__input {
   display: none;
 }
+
+.back {
+  color: #00334e;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.back img {
+  margin-right: 10px;
+}
+
+.back:hover {
+  color: #4d7083;
+}

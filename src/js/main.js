@@ -1,42 +1,13 @@
 import "bootstrap";
-import "./lowongan";
-import Tagify from "@yaireo/tagify";
-import Quill from "quill";
 
-const InputTag = document.getElementById("inputTag");
-new Tagify(InputTag);
+const FormLogin = document.getElementById("formLogin");
 
-const email = document.getElementById("EmailLogin");
-const password = document.getElementById("PasswordLogin");
-const formLogin = document.getElementById("FormLogin");
-const emailRegex = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
+FormLogin.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const email = document.getElementById("EmailLogin");
+  const password = document.getElementById("PasswordLogin");
 
-formLogin?.addEventListener("submit", (e) => checkLogin(e));
-
-const checkLogin = (e) => {
-  if (emailRegex.test(email.value)) {
-    console.log("email is valid");
-    email.classList.remove("is-invalid");
-    email.classList.add("is-valid");
-
-    if (email.value !== "") {
-      email.classList.remove("is-invalid");
-      email.classList.add("is-valid");
-    } else {
-      email.classList.add("is-invalid");
-      e.preventDefault();
-    }
-  } else {
-    email.classList.remove("is-valid");
-    email.classList.add("is-invalid");
-    e.preventDefault();
+  if (email.value === "dika1254@gmail.com" && password.value === "123456") {
+    window.location.href = "admin.html";
   }
-
-  if (password.value !== "") {
-    password.classList.remove("is-invalid");
-    password.classList.add("is-valid");
-  } else {
-    password.classList.add("is-invalid");
-    e.preventDefault();
-  }
-};
+});
