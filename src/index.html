@@ -10,6 +10,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.scss" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <script src="js/main.js" defer></script>
   </head>
   <body>
@@ -215,7 +221,7 @@
           <div class="modal-body mx-4">
             <h4>SilokerNF</h4>
             <span>Sign in</span>
-            <form class="form-login validate" method="POST" id="formLogin">
+            <form class="form-login validate" method="POST" name="formLogin">
               <div class="form-floating mb-3">
                 <input
                   type="email"
@@ -226,6 +232,7 @@
                   required
                 />
                 <label for="EmailInput">Email address</label>
+                <small style="margin-left: 12px"> </small>
               </div>
               <div class="form-floating">
                 <input
@@ -237,6 +244,7 @@
                   required
                 />
                 <label for="PasswordLogin">Password</label>
+                <small style="margin-left: 12px"> </small>
               </div>
               <button type="submit" class="btn btn-primary">Masuk</button>
             </form>

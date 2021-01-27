@@ -1,6 +1,4 @@
-import "bootstrap/js/src/modal";
-import "bootstrap/js/src/collapse";
-import data from "./data";
+import data from "../js/data/data";
 import Tagify from "@yaireo/tagify";
 const InputTag = document.getElementById("inputTag");
 new Tagify(InputTag);

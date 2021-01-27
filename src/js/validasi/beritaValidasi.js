@@ -6,16 +6,6 @@ new Quill("#isiBerita", {
   theme: "snow",
 });
 
-new Quill("#kriteria", {
-  placeholder: "deskripsikan kriteria yang anda butuhkan",
-  theme: "snow",
-});
-
-new Quill("#deskripsi", {
-  placeholder: "deskripsikan perusahaan anda",
-  theme: "snow",
-});
-
 let input = document.querySelector(".customLook"),
   tagify = new Tagify(input),
   button = input.nextElementSibling;

@@ -1,4 +1,4 @@
-import data from "./data";
+import data from "./data/data";
 // Image component
 import img8 from "../assets/images/image8.png";
 import img10 from "../assets/images/image10.png";
