@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin silokerNf</title>
     <link rel="stylesheet" href="css/main.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
@@ -55,13 +59,21 @@
       </div>
     </nav>
     <!-- End Navigation -->
+    <div
+      class="container d-flex justify-content-between align-items-center"
+      style="margin-top: 100px; margin-bottom: 20px"
+    >
+      <h5 class="mb-3">Daftar mitra</h5>
+      <a href="daftarmitra.html" class="btn btn-primary">Tambah mitra</a>
+    </div>
     <!-- Container -->
-    <div class="container" style="margin-top: 100px">
+    <div class="container">
       <table class="table table-striped">
         <thead>
           <tr>
             <th>Perusahaan</th>
             <th>Email</th>
+            <th>Status</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -69,50 +81,70 @@
           <tr>
             <td>PT Web Media Technology</td>
             <td>NiagaHoster@gmail.com</td>
+            <td>Published</td>
             <td>
-              <a href="daftarmitra.html" title="klik untuk mengedit">edit</a> |
+              <a href="daftarmitra.html" title="klik untuk mengedit"
+                ><i class="fa fa-edit"></i> Edit</a
+              >
+              |
               <a href="#" class="link-danger" title="klik untuk menghapus"
-                >delete</a
+                ><i class="fa fa-trash-o"></i> Delete</a
               >
             </td>
           </tr>
           <tr>
             <td>PT Erlimpex</td>
             <td>Erlimpex@gmail.com</td>
+            <td>Pending</td>
             <td>
-              <a href="daftarmitra.html" title="klik untuk mengedit">edit</a> |
+              <a href="daftarmitra.html" title="klik untuk mengedit"
+                ><i class="fa fa-edit"></i> Edit</a
+              >
+              |
               <a href="#" class="link-danger" title="klik untuk menghapus"
-                >delete</a
+                ><i class="fa fa-trash-o"></i> Delete</a
               >
             </td>
           </tr>
           <tr>
             <td>PT Berca Hardayaperkasa</td>
             <td>Berca Hardayaperkasa@gmail.com</td>
+            <td>Published</td>
             <td>
-              <a href="daftarmitra.html" title="klik untuk mengedit">edit</a> |
+              <a href="daftarmitra.html" title="klik untuk mengedit"
+                ><i class="fa fa-edit"></i> Edit</a
+              >
+              |
               <a href="#" class="link-danger" title="klik untuk menghapus"
-                >delete</a
+                ><i class="fa fa-trash-o"></i> Delete</a
               >
             </td>
           </tr>
           <tr>
             <td>PT Puninar Jaya</td>
             <td>Puninar Jaya@gmail.com</td>
+            <td>Published</td>
             <td>
-              <a href="daftarmitra.html" title="klik untuk mengedit">edit</a> |
+              <a href="daftarmitra.html" title="klik untuk mengedit"
+                ><i class="fa fa-edit"></i> Edit</a
+              >
+              |
               <a href="#" class="link-danger" title="klik untuk menghapus"
-                >delete</a
+                ><i class="fa fa-trash-o"></i> Delete</a
               >
             </td>
           </tr>
           <tr>
             <td>PT Sisindokom Lintasbuana</td>
             <td>Sisindokom@gmail.com</td>
+            <td>Pending</td>
             <td>
-              <a href="daftarmitra.html" title="klik untuk mengedit">edit</a> |
+              <a href="daftarmitra.html" title="klik untuk mengedit"
+                ><i class="fa fa-edit"></i> Edit</a
+              >
+              |
               <a href="#" class="link-danger" title="klik untuk menghapus"
-                >delete</a
+                ><i class="fa fa-trash-o"></i> Delete</a
               >
             </td>
           </tr>
@@ -120,5 +152,32 @@
       </table>
     </div>
     <!-- End Container -->
+    <!-- Modal compoment -->
+    <div
+      class="modal fade example-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Peringatan !</h5>
+          </div>
+          <div class="modal-body"><p>Yakin mau di hapus ?</p></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="adminmitra.html" class="btn btn-danger">Yes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
   </body>
 </html>

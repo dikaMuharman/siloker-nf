@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin silokerNf</title>
     <link rel="stylesheet" href="css/main.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
@@ -34,7 +38,7 @@
               <a href="adminmitra.html" class="nav-link">mitra</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">berita</a>
+              <a href="adminberita.html" class="nav-link">berita</a>
             </li>
           </ul>
           <div class="navbar-nav align-items-lg-center dropdown">
@@ -56,7 +60,14 @@
     </nav>
     <!-- End Navigation -->
     <!-- Container -->
-    <div class="container table-responsive" style="margin-top: 100px">
+    <div
+      class="container d-flex justify-content-between align-items-center"
+      style="margin-top: 100px; margin-bottom: 20px"
+    >
+      <h5 class="mb-3">Daftar lowowongan</h5>
+      <a href="daftarloker.html" class="btn btn-primary">Tambah lowongan</a>
+    </div>
+    <div class="container table-responsive">
       <table class="table table-striped">
         <thead>
           <tr>
@@ -64,6 +75,7 @@
             <th>Lokasi</th>
             <th>Perusahaan</th>
             <th>Email</th>
+            <th>Status</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -73,9 +85,13 @@
             <td>Bali</td>
             <td>PT Web Media Technology</td>
             <td>NiagaHoster@gmail.com</td>
+            <td>Published</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a>
+              |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -83,9 +99,12 @@
             <td>Kalimantan Selatan</td>
             <td>PT Web Media Technology</td>
             <td>NiagaHoster@gmail.com</td>
+            <td>Published</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -93,9 +112,12 @@
             <td>Semarang</td>
             <td>PT Web Media Technology</td>
             <td>NiagaHoster@gmail.com</td>
+            <td>draft</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -103,9 +125,12 @@
             <td>Klaten</td>
             <td>PT Web Media Technology</td>
             <td>NiagaHoster@gmail.com</td>
+            <td>draft</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -113,9 +138,12 @@
             <td>Bandung</td>
             <td>PT Web Media Technology</td>
             <td>NiagaHoster@gmail.com</td>
+            <td>Published</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -123,9 +151,12 @@
             <td>Semarang</td>
             <td>PT Erlimpex</td>
             <td>Erlimpex@gmail.com</td>
+            <td>draft</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -133,9 +164,12 @@
             <td>Semarang</td>
             <td>PT Erlimpex</td>
             <td>Erlimpex@gmail.com</td>
+            <td>draft</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -143,9 +177,12 @@
             <td>Jakarta Raya</td>
             <td>PT Berca Hardayaperkasa</td>
             <td>Berca Hardayaperkasa@gmail.com</td>
+            <td>draft</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -153,9 +190,12 @@
             <td>Jakarta Pusat</td>
             <td>PT Berca Hardayaperkasa</td>
             <td>Berca Hardayaperkasa@gmail.com</td>
+            <td>Published</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -163,9 +203,12 @@
             <td>Jakarta Raya</td>
             <td>PT Berca Hardayaperkasa</td>
             <td>Berca Hardayaperkasa@gmail.com</td>
+            <td>draft</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -173,9 +216,12 @@
             <td>Jakarta Timur</td>
             <td>PT Puninar Jaya</td>
             <td>Puninar Jaya@gmail.com</td>
+            <td>draft</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -183,9 +229,12 @@
             <td>Jakarta Timur</td>
             <td>PT Puninar Jaya</td>
             <td>Puninar Jaya@gmail.com</td>
+            <td>Published</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -193,9 +242,12 @@
             <td>Jakarta Timur</td>
             <td>PT Puninar Jaya</td>
             <td>Puninar Jaya@gmail.com</td>
+            <td>draft</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -203,9 +255,12 @@
             <td>Jakarta Timur</td>
             <td>PT Puninar Jaya</td>
             <td>Puninar Jaya@gmail.com</td>
+            <td>draft</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
           <tr>
@@ -213,14 +268,44 @@
             <td>Jakarta Pusat</td>
             <td>PT Sisindokom Lintasbuana</td>
             <td>Sisindokom@gmail.com</td>
+            <td>draft</td>
             <td>
-              <a href="daftarloker.html">edit</a> |
-              <a href="#" class="link-danger">delete</a>
+              <a href="daftarloker.html"><i class="fa fa-edit"></i> Edit</a> |
+              <a href="#" class="link-danger"
+                ><i class="fa fa-trash-o"></i> Delete</a
+              >
             </td>
           </tr>
         </tbody>
       </table>
     </div>
     <!-- End Container -->
+    <!-- Modal compoment -->
+    <div
+      class="modal fade example-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Peringatan !</h5>
+          </div>
+          <div class="modal-body"><p>Yakin mau di hapus ?</p></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="adminlowongan.html" class="btn btn-danger">Yes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
   </body>
 </html>
