@@ -26,60 +26,85 @@
 
       <div class="text-center">
         <h1>SilokerNF</h1>
-        <h5 class="mt-5">Daftar mitra perusahaan</h5>
-        <span class="text-secondary">Siapa saja bisa menjadi mitra kami</span>
+        <h5 class="mt-5">Buat lowongan perusahaan anda</h5>
+        <span class="text-secondary"
+          >bagikan detail terkait lowongan perusahaan anda</span
+        >
       </div>
       <form action="#" class="mt-2 mb-5" id="daftarloker">
         <div class="mb-3">
-          <label for="namaPerusahaan" class="form-label">Nama perusahaan</label>
+          <label for="namaPerusahaan" class="form-label"
+            >Nama perusahaan<span class="text-danger">*</span></label
+          >
           <input
             type="text"
             class="form-control"
             name="namaPerusahaan"
             placeholder="example: pt mencari cinta sejari"
           />
+          <small class="d-none" style="margin-left: 12px"></small>
         </div>
         <div class="mb-3">
           <label for="logo" class="form-label">Logo perusahaan</label>
-          <input class="form-control" type="file" name="logo" />
+          <input
+            class="form-control"
+            type="file"
+            name="logo"
+            accept="image/x-png,image/jpeg,image/jpg"
+          />
         </div>
         <div class="mb-3">
-          <label for="bidang-usaha">Bidang Usaha</label>
+          <label for="bidang-usaha"
+            >Bidang Usaha<span class="text-danger">*</span></label
+          >
           <select
             class="form-select"
             aria-label="Default select example"
             name="bidang"
           >
-            <option selected>Pilih</option>
-            <option value="1">Perbankan</option>
-            <option value="2">Jasa</option>
-            <option value="3">Kesehatan</option>
-            <option value="3">Transportasi</option>
+            <option selected value="selected">Pilih</option>
+            <option value="perbankan">Perbankan</option>
+            <option value="jasa">Jasa</option>
+            <option value="kesehatan">Kesehatan</option>
+            <option value="transportasi">Transportasi</option>
           </select>
+          <small class="d-none" style="margin-left: 12px"> </small>
         </div>
         <div class="mb-3">
-          <label for="kriteria" class="form-label">kriteria</label>
+          <label for="kriteria" class="form-label"
+            >kriteria<span class="text-danger">*</span></label
+          >
           <div id="kriteria"></div>
+          <small class="d-none">text</small>
         </div>
         <div class="mb-3">
-          <label class="form-label">Kategori</label>
+          <label class="form-label"
+            >Kategori<span class="text-danger">*</span></label
+          >
           <div class="d-flex">
             <input class="customLook" />
             <button type="button">+</button>
           </div>
+          <small class="invalid"></small>
         </div>
         <div class="mb-3">
-          <label for="date">Tanggal terakhir di tutup</label>
+          <label for="date"
+            >Tanggal terakhir di tutup<span class="text-danger">*</span></label
+          >
           <input type="date" name="date" class="form-control" />
+          <small class="invalid-feedback" style="margin-left: 12px">Nope</small>
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
+          <label for="email" class="form-label"
+            >Email<span class="text-danger">*</span></label
+          >
           <input
             type="email"
             class="form-control"
-            name="email"
+            name="emailPerusahaan"
             placeholder="https://example.com"
           />
+          <small class="invalid-feedback" style="margin-left: 12px">Nope</small>
         </div>
         <div class="mb-3">
           <button class="btn btn-primary" type="submit">Publish</button>

@@ -2,6 +2,7 @@ const setError = (element, message) => {
   element.classList.add("is-invalid");
   const parentElement = element.parentElement;
   const feedBack = parentElement.querySelector("small");
+  feedBack.classList.contains("d-none") && feedBack.classList.remove("d-none");
   feedBack.classList.add("invalid-feedback");
   feedBack.innerText = message;
   return false;

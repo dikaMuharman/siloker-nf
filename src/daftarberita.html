@@ -29,39 +29,59 @@
         <h5 class="mt-5">Berita</h5>
         <span class="text-secondary">Berita apa saja terkait</span>
       </div>
-      <form action="#" class="mt-2 mb-5">
+      <form action="#" class="mt-2 mb-5" id="formBerita">
         <div class="mb-3">
           <label for="judul" class="form-label">Judul</label>
           <input
             type="text"
             class="form-control"
-            id="judul"
+            name="judul"
             placeholder="judul"
           />
+          <small class="d-none" style="margin-left: 12px"></small>
         </div>
         <div class="mb-3">
           <label for="image" class="form-label">Cover image</label>
-          <input class="form-control" type="file" id="image" />
+          <input
+            class="form-control"
+            type="file"
+            name="image"
+            accept="image/x-png,image/jpeg,image/jpg"
+          />
         </div>
         <div class="mb-3">
           <label for="isiBerita" class="form-label">Isi berita</label>
           <div id="isiBerita"></div>
+          <small class="d-none" style="margin-left: 12px"></small>
         </div>
         <div class="mb-3">
           <label class="form-label">Kategori</label>
           <div class="d-flex">
-            <input class="customLook" required />
+            <input class="customLook" />
             <button type="button">+</button>
           </div>
+          <small class="d-none" style="margin-left: 12px"></small>
         </div>
         <div class="mb-3">
-          <label for="url" class="form-label">Sumber berita</label>
+          <label for="situsBerita" class="form-label">Sumber Berita</label>
+          <input
+            type="text"
+            class="form-control"
+            name="situsBerita"
+            placeholder="situsBerita"
+          />
+          <small class="d-none" style="margin-left: 12px"></small>
+        </div>
+        <div class="mb-3">
+          <label for="url" class="form-label">Url Sumber berita</label>
           <input
             type="url"
             class="form-control"
-            id="url"
+            name="url"
             placeholder="https://example.com"
+            pattern="https://.*"
           />
+          <small class="d-none" style="margin-left: 12px"></small>
         </div>
         <div class="mb-3">
           <button class="btn btn-primary" type="submit">Publish</button>
