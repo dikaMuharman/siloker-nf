@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lowongan</title>
+    <title>News</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -15,11 +15,9 @@
       defer
     ></script>
     <script src="js/main.js" defer></script>
-    <script src="js/lowongan.js" defer></script>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <a href="#" class="navbar-brand">SilokerNf</a>
         <button
@@ -37,7 +35,7 @@
               <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="lowongan.html" class="nav-link active">Lowongan</a>
+              <a href="lowongan.html" class="nav-link">Lowongan</a>
             </li>
             <li class="nav-item">
               <a href="daftarloker.html" class="nav-link">Loker</a>
@@ -46,7 +44,7 @@
               <a href="mitra.html" class="nav-link">Daftar mitra</a>
             </li>
             <li class="nav-item">
-              <a href="news.html" class="nav-link">News</a>
+              <a href="mitra.html" class="nav-link active">News</a>
             </li>
             <li>
               <form class="d-flex form">
@@ -62,7 +60,7 @@
           <div class="navbar-nav align-items-lg-center">
             <a
               data-bs-toggle="modal"
-              data-bs-target="#modalLoginLowongan"
+              data-bs-target="#modalLogin"
               class="btn btn-primary"
               href="#"
             >
@@ -73,71 +71,115 @@
       </div>
     </nav>
     <!-- End Navigation -->
-    <!-- Form -->
-    <div class="container-xl">
-      <form class="form-custom shadow">
-        <div class="form-custom__container form-custom__container--input">
-          <img
-            src="assets/icons/search.svg"
-            alt="search"
-            class="form-custom__icon"
-          />
-          <input
-            id="inputTag"
-            class="form-custom__control"
-            placeholder="Category"
-          />
-        </div>
-        <div class="form-custom__container form-custom__container--hidden">
-          <img
-            src="assets/icons/line.svg"
-            alt="line"
-            class="form-custom__icon"
-          />
-        </div>
-        <div class="form-custom__container form-custom__container--input">
-          <img
-            src="assets/icons/location.svg"
-            alt="location"
-            class="form-custom__icon"
-          />
-          <input
-            type="text"
-            name="location"
-            id="location"
-            placeholder="Location"
-            class="form-custom__control"
-          />
-        </div>
-        <div class="form-custom__container form-custom__container--button">
-          <button class="form-custom__button btn-primary">Find job</button>
-        </div>
-      </form>
-    </div>
-    <!-- End Form -->
 
-    <!-- Lowongan kerja -->
-    <div class="container mt-3">
-      <div class="job">
-        <div class="job__lists" id="job-lists">
-          <!-- Content goes here -->
+    <!-- Category news -->
+    <div class="container mb-5" style="margin-top: 100px">
+      <h4 class="text-center">Berita</h4>
+      <div class="row">
+        <div class="col col-md-4 text-center my-2">
+          <a href="#" class="news-category active">Trending</a>
         </div>
-        <div class="job__detail" id="detailJob">
-          <div class="detail" data-visible="false">
-            <img
-              src="assets/images/empty-state.png"
-              alt="empty"
-              class="detail__empty"
-            />
+        <div class="col col-md-4 text-center my-2">
+          <a href="#" class="news-category">Latest post</a>
+        </div>
+        <div class="col col-md-4 text-center my-2">
+          <a href="#" class="news-category">Top News</a>
+        </div>
+      </div>
+    </div>
+    <!-- End category news -->
+    <!-- News -->
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-xl-6 col-12 mb-5 mb-xl-0">
+          <div class="media media-news">
+            <div class="media-img">
+              <img
+                src="assets/images/news-1.png"
+                alt="Generic placeholder image"
+              />
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 sep">
+                Fitur Serap Jejak Karbon Gojek, Pantau Pohon Lewat Dashboard
+              </h5>
+              <a href="detailberita.html" class="btn btn-transparent"
+                >View More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-12">
+          <div class="media media-news">
+            <div class="media-img">
+              <img
+                src="assets/images/news-2.png"
+                alt="Generic placeholder image"
+              />
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 sep">
+                Pemilik Website Harap Bersiap, Chrome Mulai Blokir Iklan yang
+                Bikin Lemot
+              </h5>
+
+              <a href="detailberita.html" class="btn btn-transparent"
+                >View More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-gutters mt-4">
+        <div class="col-xl-6 col-12 mb-5 mb-xl-0">
+          <div class="media media-news">
+            <div class="media-img">
+              <img
+                src="assets/images/news-3.png"
+                alt="Generic placeholder image"
+              />
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 sep">
+                EdTech Startup Cakap Sambut 2021 dengan Investasi Rp 42 Miliar
+              </h5>
+
+              <a href="detailberita.html" class="btn btn-transparent"
+                >View More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-12">
+          <div class="media media-news">
+            <div class="media-img">
+              <img
+                src="assets/images/news-4.png"
+                alt="Generic placeholder image"
+              />
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 sep">
+                Deretan Fitur Baru WhatsApp Dirasakan Pengguna di RI 2020
+              </h5>
+
+              <a href="detailberita.html" class="btn btn-transparent"
+                >View More</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- End Catogory news -->
 
-    <!-- Modal component -->
+    <!-- Modal Component -->
     <div
       class="modal fade"
-      id="modalLoginLowongan"
+      id="modalLogin"
       tabindex="-1"
       aria-labelledby="modalLoginLabel"
       aria-hidden="true"
@@ -160,6 +202,7 @@
                 <input
                   type="email"
                   class="form-control"
+                  id="EmailLogin"
                   name="EmailLogin"
                   placeholder="name@example.com"
                   required
@@ -171,6 +214,7 @@
                 <input
                   type="password"
                   class="form-control"
+                  id="PasswordLogin"
                   name="PasswordLogin"
                   placeholder="Password"
                   required
@@ -178,12 +222,11 @@
                 <label for="PasswordLogin">Password</label>
                 <small style="margin-left: 12px"> </small>
               </div>
-              <button type="submit" class="btn btn-primary">Login</button>
+              <button type="submit" class="btn btn-primary">Masuk</button>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <!-- End modal compomnent -->
   </body>
 </html>

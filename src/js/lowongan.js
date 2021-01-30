@@ -75,9 +75,7 @@ jobLists.forEach((jobList) => {
       detailSection.classList.add("active");
       window.scrollTo(0, 200);
     }
-
     removeActiveClass();
-
     jobList.classList.add("active");
     detailJob.innerHTML = detailComponent(jobList.dataset.id);
   });

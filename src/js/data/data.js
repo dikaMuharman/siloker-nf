@@ -230,4 +230,36 @@ export default {
       date: "24/2/2021",
     },
   ], // end lowongan data
+  mitra: [
+    {
+      id: 1,
+      namaPerusahaan: "Niagahoster",
+      deskripsiPerusahaan:
+        "PT Web Media Technology Indonesia adalah bagian dari perusahaan IT multinasional Hostinger International, Ltd., yang telah melayani jutaan pelanggan di seluruh dunia. Sebagai Google Mitra resmi, PT. Teknologi Media Web Indonesia menyediakan solusi periklanan Google Adwords (nama merek Teratas Online), solusi pembuatan dan pengelolaan situs web profesional (nama merek Niagaweb) dan layanan hosting tak terbatas dengan server IIX (nama merek Niagahoster). Tim kami terdiri dari para ahli di bidang hosting situs web, pengembangan situs web, pengelolaan situs web, dan pakar periklanan bersertifikat Google yang siap membantu pemilik UKM di Indonesia dalam menjangkau pelanggan dan kesuksesan bisnis online.",
+    },
+    {
+      id: 2,
+      namaPerusahaan: "Erpha",
+      deskripsiPerusahaan:
+        "PT Erlimpex Sebuah Perusahaan Farmasi Nasional yang yang sedang berkembang pesat untuk memberikan produk - produk berkualitas demi menunjang pelayanan kesehatan kepada masyarakat di seluruh penjuru Indonesia. Dalam rangka mewujudkan visi dan misinya, kami mencari kandidat potensial untuk mengisi posisi strategis untuk mengembangkan organisasi di perusahaan.",
+    },
+    {
+      id: 3,
+      namaPerusahaan: "Berca Hardayaperkasa",
+      deskripsiPerusahaan:
+        "PT. Berca Hardayaperkasa (BHp) berdiri sejak tahun 1990. Saat ini, BHp's menjadi salah satu penyedia solusi Enterprise Information Communication Technology (ICT) dan Test & Measurement (T & M) terkemuka di Indonesia. BHp didukung oleh prinsipal lain dan terus unggul dalam menyediakan solusi TIK dan T & M yang efisien, dari sistem perangkat keras hingga solusi total, kepada lebih dari 350 perusahaan dari berbagai disiplin industri di seluruh negeri. Kegiatan bisnis inti BHp adalah menyediakan sistem komputasi, layanan konsultasi TI, Telekomunikasi & Infrastruktur, serta produk dan layanan T&M kepada perusahaan.",
+    },
+    {
+      id: 4,
+      namaPerusahaan: "PT Puninar Jaya",
+      deskripsiPerusahaan:
+        "Puninar Group adalah perusahaan afiliasi dari Triputra Group. Sejak didirikan pada tahun 1969, Puninar Logistics telah tumbuh dan berkembang menjadi perusahaan logistik terdepan dan berpengalaman yang memimpin dunia logistik di Indonesia dengan kapabilitas dan kompetensi untuk memberikan solusi logistik yang menyeluruh melalui operasional industri vertikal. Pemahaman mendalam kami tentang Rantai Pasokan Pelanggan, memungkinkan kami untuk menambahkan nilai di sepanjang rantai pasokan, mulai dari pengiriman barang dan administrasi bea cukai bahan produksi mentah, logistik masuk, manajemen bahan manufaktur, pergudangan, distribusi, hingga layanan pasca pengiriman dan pengembalian logistik.",
+    },
+    {
+      id: 5,
+      namaPerusahaan: "Sisindokom",
+      deskripsiPerusahaan:
+        "PT. Sisindokom Lintasbuana adalah anggota dari Aneka Spring Telekomindo Group adalah salah satu penyedia IT dan Networking Solution terkemuka di Indonesia. Memiliki lebih dari 30 tahun pengalaman dalam memberikan solusi TI kepada komunitas bisnis mencari personel yang berkualifikasi dan berpengalaman untuk mengisi posisi tersebut.",
+    },
+  ],
 };
