@@ -28,7 +28,6 @@ const detailComponent = (id) => {
     kriteria,
   } = lowongan[id];
   const detailSection = `
-        <a id="backTo" class="detail__back">Back</a>
             <div class="detail__image">
             <img src=${gambar[imageId - 1]} alt=${namaPerusahaan} />
             </div>

@@ -58,7 +58,6 @@ lowongan.forEach((job) => {
 listContainer.innerHTML = cardComponent;
 
 const detailJob = document.querySelector(".detail");
-const detailSection = document.getElementById("detailJob");
 const jobLists = document.querySelectorAll(".card-job");
 
 const removeActiveClass = () => {
@@ -69,19 +68,23 @@ const removeActiveClass = () => {
   });
 };
 
+const modalWrapper = document.getElementById("modalDetail");
+const modalDetailContent = document.getElementById("detail-modal");
+const modalDetail = new bootstrap.Modal(modalWrapper);
+
 jobLists.forEach((jobList) => {
   jobList.addEventListener("click", (e) => {
     if (window.innerWidth < 992) {
-      detailSection.classList.add("active");
-      window.scrollTo(0, 200);
+      modalDetailContent.innerHTML = detailComponent(jobList.dataset.id);
+      modalDetail.show();
+    } else {
+      detailJob.innerHTML = detailComponent(jobList.dataset.id);
     }
     removeActiveClass();
     jobList.classList.add("active");
-    detailJob.innerHTML = detailComponent(jobList.dataset.id);
   });
 
-  detailSection.addEventListener("click", () => {
-    detailSection.classList.remove("active");
+  modalWrapper.addEventListener("hidden.bs.modal", () => {
     jobList.classList.remove("active");
   });
 });
